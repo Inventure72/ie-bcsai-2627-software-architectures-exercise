@@ -13,10 +13,6 @@ import business
 # NotEnoughStock -> 409
 
 class ShopAPI:
-    def __init__(self):
-        self.books = []
-        self.orders = []
-
     def _call(self, status, fn, *args):
         try:
             return status, fn(*args)
